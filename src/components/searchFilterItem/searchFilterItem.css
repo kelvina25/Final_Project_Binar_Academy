@@ -1,0 +1,47 @@
+
+
+.searchFilterItems{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    
+}
+
+.searchFilterItemsLine{
+    border: 1px solid var(--neutral2);
+}
+
+.searchFilterItem{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.searchFilterItemText{
+    width: 100%;
+}
+
+
+@media only screen and (max-width:600px) {
+    .searchItemLeft{
+        display: none;
+    }
+
+    .searchResultDateDay{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .searchResultDateDate{
+        font-size: 10px;
+    }
+
+    .searchFilterItems{
+        display: none;
+    }
+
+    .searchItemLeftTitle{
+        font-size: 15px;
+    }
+}

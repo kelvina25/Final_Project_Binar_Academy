@@ -1,0 +1,169 @@
+.booking {
+    position: relative;
+    top: 5rem;
+    padding: 2rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.booking h2 {
+    font-size: 20px;
+}
+
+.booking__header {
+    display: flex;
+}
+
+/* .booking__notif {
+    margin: 0.8rem 1rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--neutral1);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+.booking__notif p {
+    padding: 0.5rem;
+} */
+
+.booking__biodata {
+    display: grid;
+    margin: 0 2rem;
+    grid-template-columns: 60% 40%;
+    gap: 0.5rem;
+}
+
+.btn__save {
+    color: var(--neutral1);
+    background: var(--primary4);
+    border: none;
+    cursor: pointer;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.btn__save:hover,
+.done__button button:hover {
+    background: var(--primary3);
+}
+
+.booking__biodata__detail,
+.booking__code {
+    margin: 2rem 0 0 1rem;
+}
+
+.booking__biodata__detail h3,
+.booking__code__judul h3 {
+    font-size: 18px;
+}
+
+.booking__biodata__detail button {
+    width: 100%;
+    background: var(--danger);
+    border-radius: 12px;
+    border: none;
+    padding: 1rem 0;
+    color: var(--neutral1);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.booking__biodata__detail button:hover {
+    background: rgb(250, 104, 104);
+}
+
+.booking__code__judul {
+    display: flex;
+    /* align-items: center; */
+    gap: 0.25rem;
+}
+
+.booking__code__judul span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary4);
+}
+
+.data__pembayaran {
+    padding: 2rem 0;
+}
+
+.booking__biodata__done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.done__button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 300px;
+}
+
+.done__button button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: 12px;
+    color: var(--neutral1);
+    cursor: pointer;
+    background: var(--primary4);
+}
+
+@media screen and (max-width: 1024px) {
+    .booking {
+        width: 80%;
+    }
+
+    .booking__biodata__detail h3,
+    .booking__code__judul h3 {
+        font-size: 14px;
+    }
+
+    .booking__code__judul span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .booking {
+        width: 90%;
+    }
+
+    .booking h2 {
+        font-size: 16px;
+    }
+
+    .booking__biodata {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.5rem;
+    }
+
+    .booking__notif {
+        font-size: 14px;
+    }
+
+    .btn__save,
+    .booking__biodata__detail button {
+        padding: 0.5rem 0;
+        font-size: 18px;
+    }
+
+    .done__button {
+        width: 200px;
+    }
+}

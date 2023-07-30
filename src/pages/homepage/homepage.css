@@ -1,0 +1,109 @@
+
+
+
+.homepage__container {
+    /* width: var(--container-width-lg); */
+    width: 100%;
+    margin: 0 auto;
+  
+    padding-top: 13%;
+/*     color: var(--neutral-5);    */
+    
+    /* padding-top: 10%;
+    color: var(--neutral-5);    */
+}
+
+
+/* BANNER */
+.banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner img {
+    width: 80vw;
+    position: absolute;
+    z-index: -1;
+  
+/*     margin: auto; */
+    bottom: 40px;
+  
+    margin: 0 auto;
+  
+}
+
+.background__banner {
+    display: flex;
+    background-image: linear-gradient(to right, rgba(113, 38, 181, 0.5), var(--primary-purple-1));
+    width: 100vw;
+  
+    height: 100px;
+    z-index: -5;
+}
+
+.destinationCardWrapper{
+    display: flex;
+  
+    margin-top: 2rem;
+    height: 100px;
+    z-index: -5;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+    .homepage__container {
+        width: var(--container-width-sm);
+        padding-top: 10%;
+    }
+
+    .background__banner{
+        display: none;
+    }
+
+    .destinationCardWrapper{
+        display: flex;
+    }
+
+    .banner img {
+        width: 90vw;
+        position: relative;
+        z-index: -1;
+        bottom: 40px;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:600px) {
+    .homepage__container {
+        width: var(--container-width-md);
+        padding-top: 10%;
+    }
+
+    .background__banner{
+        display: none;
+    }
+
+    .destinationCardWrapper{
+        display: flex;
+    }
+
+    .banner{
+        margin-top: 20px;
+    }
+
+    .banner img {
+        width: 90vw;
+        position: absolute;
+        z-index: -1;
+        bottom: 25%;
+    }
+}

@@ -1,0 +1,82 @@
+.detail__date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail__date span {
+  font-size: 14px;
+}
+
+.date p {
+  font-weight: 700;
+}
+
+.status p {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary3);
+}
+
+.nama__terminal {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.line {
+  border: 1px solid var(--neutral2);
+  margin: 0.5rem;
+}
+
+.detail__pesawat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail__pesawat img {
+  width: 60px;
+  height: auto;
+}
+
+.kategori__pesawat {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pType {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.informasi__pesawat,
+.keterangan {
+  font-size: 14px;
+}
+
+.detail__price {
+  padding: 0 0.5rem;
+}
+
+.rincian__harga {
+  display: flex;
+  justify-content: space-between;
+}
+
+.harga {
+  font-size: 14px;
+  text-align: right;
+}
+
+.total__harga {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.total__harga span {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary4);
+}

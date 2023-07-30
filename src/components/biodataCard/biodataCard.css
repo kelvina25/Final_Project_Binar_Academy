@@ -1,0 +1,7 @@
+.biodata__card {
+    border: 1px solid var(--neutral3);
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    margin: 1rem 0;
+}

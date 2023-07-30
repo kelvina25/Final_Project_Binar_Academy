@@ -1,0 +1,250 @@
+.destination_favorite {
+  margin: 0 auto;
+  width: 65vw;
+  margin-top: 15%;
+}
+
+.destination_favorite h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.destination_category {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+.destination_category_option {
+  background: var(--primary-purple-1);
+  color: var(--neutral-5);
+  width: auto;
+  padding: 8px 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.destination_category_option:active {
+  background-color: var(--primary-purple-4);
+  color: var(--neutral-1);
+}
+
+.destination_cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.destination_card_option {
+  background: var(--neutral-1);
+  border-radius: 4px;
+  box-shadow: var(--shadow-low);
+  width: auto;
+  padding: 0.5rem;
+}
+
+.destination_card_option img {
+  position: relative;
+  border-radius: 4px;
+}
+
+.offer {
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--neutral-1);
+  background: var(--primary-purple-3);
+  padding: 2px 10px 2px 22px;
+  border-radius: 12px 0px 0px 12px;
+  margin-left: -60px;
+}
+
+.detail_card {
+  display: flex;
+  flex-direction: column;
+}
+
+#flight {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
+  padding-top: 4px;
+}
+
+#plane {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--primary-purple-4);
+  margin: 0;
+}
+
+#schedule {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--neutral-5);
+  margin: 0;
+}
+
+#price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--neutral-5);
+  margin: 0;
+}
+
+#price span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-danger);
+}
+
+/* DestinationSwiper */
+
+.destination_cards .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.destinationWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.destination_cards .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+  background: var(--neutral-1);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+  /* Center slide text vertically */
+}
+
+.destination_cards .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destinationPlace {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.destinationPlane {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--primary-purple-4);
+}
+
+.destinationDate {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.destinationPrice {
+  font-size: 13px;
+}
+
+.destinationPrice span {
+  font-weight: bold;
+  color: var(--color-danger);
+}
+
+@media screen and (max-width: 600px) {
+  .destination_favorite {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 350px;
+  }
+
+  .destination_favorite h6 {
+    margin-top: 20px;
+  }
+
+  .destination_category {
+    display: none;
+  }
+
+  .destinationPlace {
+    font-size: 11px;
+  }
+
+  .destinationPlane {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--primary-purple-4);
+  }
+
+  .destinationDate {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .destinationPrice {
+    font-size: 10px;
+  }
+
+  .destinationPrice span {
+    font-weight: bold;
+    color: var(--color-danger);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .destination_favorite {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 350px;
+  }
+
+  .destination_favorite h6 {
+    margin-top: 50px;
+  }
+
+  .destination_category {
+    display: none;
+  }
+
+  .destinationPlace {
+    font-size: 11px;
+  }
+
+  .destinationPlane {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--primary-purple-4);
+  }
+
+  .destinationDate {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .destinationPrice {
+    font-size: 10px;
+  }
+
+  .destinationPrice span {
+    font-weight: bold;
+    color: var(--color-danger);
+  }
+}

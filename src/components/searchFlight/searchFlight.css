@@ -1,0 +1,1063 @@
+/* SEARCH FLIGHT */
+.search_flight_container {
+  box-shadow: var(--shadow-high);
+  border: 1px solid var(--neutral-2);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: var(--neutral-1);
+  padding: 24px;
+  width: 65vw;
+  /*     top: 8rem; */
+
+  margin: 0 auto;
+  top: 8rem;
+
+  position: absolute;
+  z-index: 10;
+}
+
+.search_flight_container h6 {
+  text-shadow: var(--text-shadow);
+  font-weight: 800;
+}
+
+.logo__name {
+  color: var(--primary-purple-4);
+}
+
+/* DESTINATION */
+.destination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.destination__from__to {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  /* position: relative; */
+}
+
+.destination__from__to .icon {
+  color: var(--neutral-3);
+}
+
+.destination__from__to p {
+  margin-left: 10px;
+  margin-right: 16px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--neutral-3);
+}
+
+.destination__from__to_input {
+  width: 20vw;
+  height: 25px;
+  border-bottom: 1.5px solid var(--neutral-2);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.swap__destination {
+  background: var(--neutral-5);
+  color: var(--neutral-1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  /* margin: 0 1rem; */
+  cursor: pointer;
+}
+
+.swap__destination:hover {
+  background: var(--primary-purple-2);
+  color: var(--primary-purple-5);
+}
+
+/* DESTINATION MODAL */
+.destination_options {
+  position: absolute;
+  top: 70%;
+  /* top: 50%; */
+  left: 15%;
+  background-color: var(--neutral-1);
+  border-radius: 12px;
+  color: var(--neutral-5);
+  padding: 20px;
+  width: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+}
+
+.search_field_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.destination_options hr {
+  margin: 4px;
+}
+
+.search_field {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  border: 1px solid var(--neutral-3);
+  border-radius: 4px;
+  padding: 8px 8px 8px 16px;
+  color: var(--neutral-5);
+  gap: 8px;
+  width: 630px;
+  height: 40px;
+}
+
+.search_field input {
+  width: 600px;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.latest_search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.latest_search p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-5);
+  margin: 0;
+}
+
+.latest_search span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-danger);
+  cursor: pointer;
+}
+
+.latestSeachItem {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid var(--neutral-2);
+}
+
+/* DATE FIELD*/
+.date_and_passenger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.date_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+}
+
+.date_and_passenger .icon {
+  color: var(--neutral-3);
+}
+
+.date_container p {
+  margin-left: 10px;
+  margin-right: 16px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--neutral-3);
+}
+
+.departure {
+  display: flex;
+  flex-direction: column;
+}
+
+.return {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.departure_input {
+  width: 10vw;
+  height: 25px;
+  border-bottom: 1.5px solid var(--neutral-2);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.departure label {
+  color: var(--neutral-3);
+  font-size: 16px;
+}
+
+.return label {
+  color: var(--neutral-3);
+  font-size: 16px;
+}
+
+.return_input {
+  width: 10vw;
+  height: 25px;
+  border-bottom: 1.5px solid var(--neutral-2);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.returnNotOpen {
+  width: 10vw;
+  /* border-bottom: 1.5px solid var(--neutral-2); */
+  margin-left: 1rem;
+}
+
+.date_container #flexSwitchCheckDefault {
+  display: flex;
+  align-items: flex-start;
+}
+
+.date_container .input #flexSwitchCheckDefault {
+  background-color: var(--primary-purple-5);
+}
+
+.date_container .form-switch .form-check-input:focus {
+  background-color: var(--primary-purple-5);
+  border-color: var(--primary-purple-5);
+}
+
+.form-switch .form-check-input:checked {
+  background-color: var(--primary-purple-5);
+  border: var(--primary-purple-5);
+}
+
+.date_options {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  background-color: var(--neutral-1);
+  border-radius: 12px;
+  color: #151515;
+  padding: 20px;
+  width: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+}
+
+/* PASSENGER FIELD*/
+.passenger_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.passenger,
+.seat_class {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.seat_class {
+  margin-left: 0.5rem;
+}
+
+.passenger_container p {
+  margin-left: 10px;
+  margin-right: 16px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--neutral-3);
+}
+
+.passenger label,
+.seat_class label {
+  color: var(--neutral-3);
+  font-size: 16px;
+}
+
+.passenger .passenger_input,
+.seat_class .seat_class_input {
+  width: 10vw;
+  height: 25px;
+  border-bottom: 1.5px solid var(--neutral-2);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search_button {
+  width: 100%;
+  position: absolute;
+  bottom: -58px;
+  left: 0;
+  z-index: 11;
+  /* bottom: -12rem; */
+  /* z-index: 1; */
+  /* margin-left: 5rem; */
+}
+
+.search_button button {
+  box-shadow: var(--shadow-high);
+  border: 1px solid var(--primary-purple-4);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background: var(--primary-purple-4);
+  padding: 1rem;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-1);
+}
+
+/* OPTIONS PASSENGER MODAL */
+.passenger_options,
+.seatClass_options {
+  position: absolute;
+  top: 90%;
+  right: 10px;
+  background-color: var(--neutral-1);
+  border-radius: 12px;
+  color: #151515;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+}
+
+.optionItem {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.optionItem hr {
+  border: 1px solid var(--neutral-4);
+  margin: 6px 0;
+}
+
+.optionText {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.optionLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.optionLabel label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--neutral-5);
+}
+
+.optionLabel p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  width: 8rem;
+}
+
+.option_counter {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.option_counter_button_minus {
+  border: 1px solid var(--primary-purple-4);
+  border-radius: 4px;
+  background-color: var(--neutral-1);
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: var(--neutral-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.option_counter_button_minus:disabled {
+  cursor: not-allowed;
+}
+
+.option_counter_button_plus {
+  border: 1px solid var(--primary-purple-4);
+  border-radius: 4px;
+  background-color: var(--neutral-1);
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: var(--primary-purple-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.option_counter_number {
+  width: 60px;
+  height: 40px;
+  border: 1px solid var(--neutral-2);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--neutral-5);
+}
+
+.save_passenger {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  padding: 12px;
+  gap: 8px;
+
+  width: 150px;
+  height: 48px;
+  background: #4b1979;
+  border-radius: 12px;
+}
+
+.save_passenger button {
+  background-color: var(--primary-purple-5);
+  color: var(--neutral-1);
+  border: 0;
+}
+
+/* SEAT CLASS MODAL */
+.seat_optionItem {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  padding: 8px;
+}
+
+.seat_optionItem:hover {
+  background-color: var(--primary-purple-5);
+  color: white;
+}
+.seat_optionItem:hover label {
+  background-color: var(--primary-purple-5);
+  color: white;
+}
+.seat_optionItem:hover p {
+  background-color: var(--primary-purple-5);
+  color: white;
+}
+
+.seat_option_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.seat_option_text {
+  color: white;
+}
+
+.seat_option_text p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary-purple-4);
+}
+
+.seat_option_text label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--neutral-5);
+}
+
+.seatClass_options hr {
+  margin: 0;
+}
+
+.save_seatClass {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  padding: 12px;
+  gap: 8px;
+  margin-top: 12px;
+
+  width: 150px;
+  height: 48px;
+  background: #4b1979;
+  border-radius: 12px;
+}
+
+.save_seatClass button {
+  background-color: var(--primary-purple-5);
+  color: var(--neutral-1);
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .search_flight_container {
+    width: 90vw;
+    /* margin: 0 auto; */
+    /* top: 6rem; */
+    /* margin-left: 5rem; */
+  }
+
+  .search_flight_container h6 {
+    text-align: center;
+  }
+
+  .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .destination__from__to {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .destination__from__to .icon {
+    flex: 1;
+  }
+
+  .destination__from__to p {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .destination__from__to_input {
+    flex: 5;
+    text-align: center;
+  }
+
+  .date_and_passenger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  .date_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+
+  .date_and_passenger .icon {
+    flex: 1;
+  }
+
+  .date_container p {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 16px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--neutral-3);
+  }
+
+  .departure {
+    text-align: center;
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .return {
+    text-align: center;
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+
+  .departure_input {
+    width: 100%;
+    height: 25px;
+    border-bottom: 1.5px solid var(--neutral-2);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .departure label {
+    color: var(--neutral-3);
+    font-size: 16px;
+  }
+
+  .return label {
+    color: var(--neutral-3);
+    font-size: 16px;
+  }
+
+  .return_input {
+    width: 100%;
+  }
+
+  .returnNotOpen {
+    flex: 2.5;
+
+    margin-left: 8px;
+  }
+
+  .passenger_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .passenger {
+    text-align: center;
+    flex: 2.5;
+  }
+
+  .seat_class {
+    text-align: center;
+    flex: 2.5;
+    margin-left: 8px;
+  }
+
+  .passenger_container .icon {
+    flex: 1;
+  }
+
+  .passenger_container p {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 16px;
+  }
+
+  .passenger .passenger_input,
+  .seat_class .seat_class_input {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .destination_options {
+    position: absolute;
+    /* top: 70%; */
+    top: 50%;
+    left: -5px;
+    width: 105%;
+    /* display: flex;
+
+        flex-direction: column;
+        align-items: flex-end; */
+  }
+
+  .search_field {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
+    width: 100%;
+    height: 40px;
+  }
+
+  .passenger_options,
+  .seatClass_options {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    /* display: flex;
+        flex-direction: column;
+        align-items: flex-end; */
+  }
+
+  .optionLabel {
+    width: 120px;
+  }
+
+  .optionLabel p {
+    margin-right: 0px;
+  }
+
+  .optionItem {
+    gap: 0;
+    align-items: center;
+  }
+
+  .optionText {
+    flex: 3;
+    align-items: center;
+    text-align: center;
+  }
+
+  .option_counter {
+    flex: 1;
+    width: 100%;
+  }
+
+  .option_counter_button_minus {
+    width: 25px;
+    height: 25px;
+  }
+
+  .option_counter_number {
+    width: 35px;
+    height: 25px;
+  }
+
+  .option_counter_button_plus {
+    width: 25px;
+    height: 25px;
+  }
+
+  .save_passenger {
+    width: 100%;
+  }
+
+  .seat_option_text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .seat_option_text p {
+    margin-right: 0px;
+  }
+
+  .seat_optionItem {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .option_counter {
+    justify-content: flex-end;
+  }
+
+  .save_seatClass {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .search_flight_container {
+    width: 70vw;
+    /* margin: 0 auto; */
+    top: 9rem;
+    /* margin-left: 5rem; */
+  }
+
+  .search_flight_container h6 {
+    text-align: center;
+  }
+
+  .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .destination__from__to {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .destination__from__to .icon {
+    flex: 1;
+  }
+
+  .destination__from__to p {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .destination__from__to_input {
+    flex: 5;
+    text-align: center;
+  }
+
+  .date_and_passenger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  .date_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+
+  .date_and_passenger .icon {
+    flex: 1;
+  }
+
+  .date_container p {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 16px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--neutral-3);
+  }
+
+  .departure {
+    text-align: center;
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .return {
+    text-align: center;
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+
+  .departure_input {
+    width: 100%;
+    height: 25px;
+    border-bottom: 1.5px solid var(--neutral-2);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .departure label {
+    color: var(--neutral-3);
+    font-size: 16px;
+  }
+
+  .return label {
+    color: var(--neutral-3);
+    font-size: 16px;
+  }
+
+  .return_input {
+    width: 100%;
+  }
+
+  .returnNotOpen {
+    flex: 2.5;
+
+    margin-left: 8px;
+  }
+
+  .passenger_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .passenger {
+    text-align: center;
+    flex: 2.5;
+  }
+
+  .seat_class {
+    text-align: center;
+    flex: 2.5;
+    margin-left: 8px;
+  }
+
+  .passenger_container .icon {
+    flex: 1;
+  }
+
+  .passenger_container p {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 16px;
+  }
+
+  .passenger .passenger_input,
+  .seat_class .seat_class_input {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .destination_options {
+    position: absolute;
+    /* top: 70%; */
+    top: 50%;
+    left: -5px;
+    width: 105%;
+    /* display: flex;
+        flex-direction: column;
+        align-items: flex-end; */
+  }
+
+  .search_field {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
+    width: 100%;
+    height: 40px;
+  }
+
+  .passenger_options,
+  .seatClass_options {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    /* display: flex;
+        flex-direction: column;
+        align-items: flex-end; */
+  }
+
+  .optionLabel {
+    width: 120px;
+  }
+
+  .optionLabel p {
+    margin-right: 0px;
+  }
+
+  .optionItem {
+    gap: 0;
+    align-items: center;
+  }
+
+  .optionText {
+    flex: 3;
+    align-items: center;
+    text-align: center;
+  }
+
+  .option_counter {
+    flex: 1;
+    width: 100%;
+  }
+
+  .option_counter_button_minus {
+    width: 25px;
+    height: 25px;
+  }
+
+  .option_counter_number {
+    width: 35px;
+    height: 25px;
+  }
+
+  .option_counter_button_plus {
+    width: 25px;
+    height: 25px;
+  }
+
+  .save_passenger {
+    width: 100%;
+  }
+
+  .seat_option_text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .seat_option_text p {
+    margin-right: 0px;
+  }
+
+  .seat_optionItem {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .option_counter {
+    justify-content: flex-end;
+  }
+
+  .save_seatClass {
+    width: 100%;
+  }
+}

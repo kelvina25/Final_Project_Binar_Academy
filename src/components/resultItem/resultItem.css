@@ -1,0 +1,339 @@
+.isOpen {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 0px 4px var(--primary5);
+}
+
+.resultItems {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.resultItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 6px 0px;
+}
+
+.resultItemPlane {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resultItemPlaneImage {
+  width: 60px;
+  height: auto;
+}
+
+.resultItemPlaneName {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.resultItemMore {
+  border: 1px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.resultItemLeft {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.resultItemUp,
+.resultItemDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.resultItemUpDownLine {
+  border: 0.5px solid var(--neutral3);
+  width: 70%;
+}
+
+.resultItemUpDepartureJam,
+.resultItemUpArrivalJam {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.resultItemUpDuration,
+.resultItemDownTransit {
+  color: var(--neutral3);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.resultItemDownDepartureAirport,
+.resultItemDownArrivalAirport {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--neutral5);
+}
+
+.resultItemCenter {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+  color: var(--primary4);
+}
+
+.resultItemRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.resultItemRightPrice {
+  color: var(--primary4);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.resultItemRight button {
+  color: var(--neutral1);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 3.5px 33px;
+  border: 1px solid var(--primary4);
+  border-radius: 12px;
+  background-color: var(--primary4);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.resultItemRight button:hover {
+  color: var(--neutral1);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 3.5px 33px;
+  border: 1px solid var(--primary5);
+  border-radius: 12px;
+  background-color: var(--primary5);
+  cursor: pointer;
+}
+
+.resultItemDetail {
+  display: flex;
+  flex-direction: column;
+  animation: animateFaqOpen 100ms linear forwards;
+  transition: all 1000ms ease;
+}
+
+@keyframes animateFaqOpen {
+  0% {
+    transform: translate(0rem, -1rem);
+  }
+
+  100% {
+    transform: translate(0rem, 0rem);
+  }
+}
+
+.resultItemDetailLine1 {
+  margin: 12px 0px;
+  border: 1px solid var(--neutral2);
+}
+
+.resultItemDetailItem {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.resultItemDetailTitle {
+  color: var(--primary5);
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.resultItemDetailDeparture,
+.resultItemDetailArrival {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resultItemDetailDepartureLeft,
+.resultItemDetailArrivalLeft {
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral5);
+}
+
+.resultItemDetailDepartureJam,
+.resultItemDetailArrivalJam {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resultItemDetailDepartureTanggal,
+.resultItemDetailArrivalTanggal {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.resultItemDetailDepartureBandara,
+.resultItemDetailArrivalBandara {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resultItemDetailDepartureTitle,
+.resultItemDetailArrivalTitle {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--primary3);
+}
+
+.resultItemDetailLine2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+.resultItemDetailLine2in {
+  width: 70%;
+  border: 0.5px solid var(--neutral2);
+}
+
+.resultItemDetailPlane {
+  display: flex;
+  align-items: center;
+}
+
+.resultItemDetailPlaneLogo {
+  margin: 0px 8px;
+  width: 60px;
+  height: auto;
+}
+
+.resultItemDetailPlanetext {
+  display: flex;
+  flex-direction: column;
+}
+
+.resultItemDetailPlaneName,
+.resultItemDetailPlaneNumber,
+.resultItemDetailPlaneInformationTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.resultItemDetailPlaneInformationTitle {
+  margin-top: 20px;
+}
+
+.resultItemDetailPlaneInformationItem {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .resultItem {
+    gap: 10px;
+  }
+
+  .resultItemLeft {
+    flex: 2;
+  }
+
+  .resultItemCenter {
+    display: none;
+  }
+
+  .resultItemRight {
+    flex: 1;
+  }
+
+  .resultItemRightPrice {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .resultItemUpDepartureJam,
+  .resultItemUpArrivalJam {
+    font-size: 12px;
+  }
+
+  .resultItemUpDuration,
+  .resultItemDownTransit {
+    font-size: 10px;
+  }
+
+  .resultItemDownDepartureAirport,
+  .resultItemDownArrivalAirport {
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--neutral5);
+  }
+
+  .resultItemUpDownLine {
+    width: 60%;
+  }
+
+  .resultItemRight button {
+    font-size: 12px;
+    padding: 3.5px 33px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .resultItem {
+    gap: 10px;
+  }
+
+  .resultItemLeft {
+    flex: 3;
+  }
+
+  .resultItemCenter {
+    display: 1;
+  }
+
+  .resultItemRight {
+    flex: 2;
+  }
+
+  .resultItemRightPrice {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .resultItemDownDepartureAirport,
+  .resultItemDownArrivalAirport {
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--neutral5);
+  }
+
+  .resultItemUpDownLine {
+    width: 60%;
+  }
+
+  .resultItemRight button {
+    font-size: 12px;
+    padding: 3.5px 33px;
+  }
+}

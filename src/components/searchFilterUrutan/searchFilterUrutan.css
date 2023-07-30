@@ -1,0 +1,55 @@
+.searchFilterUrutanItemModal{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--neutral1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding: 16px 0px;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 99 ;
+    top: 40px;
+}
+
+.searchFilterUrutanItemModalText{
+    padding: 14px 0px;
+    border-bottom: 1px solid var(--neutral2);
+}
+
+.searchFilterUrutanItemModalTextBold{
+    font-weight: bold;
+}
+
+.searchFilterUrutanCloseBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+
+.searchFilterUrutanItemBtnContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+
+.searchFilterUrutanItemBtn{
+    border: none;
+    color: var(--neutral1);
+    margin-top: 12px;
+    background: var(--primary5);
+    border-radius: 12px;
+    padding: 12px 58px;
+}
+
+.searchFilterUrutanItemModalContainer{
+    padding: 0px 16px;
+    font-size: 14px;
+    color: var(--neutral5);
+}
+
+.searchFilterUrutanItemModalContainer:hover{
+    background-color: var(--primary4);
+    color: var(--neutral1);
+    cursor: pointer;
+}
